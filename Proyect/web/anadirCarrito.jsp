@@ -5,27 +5,17 @@
   <% Producto p= ProductoBD.obtenerProducto(Integer.parseInt(request.getParameter("id")));
   %>
   <div class="container">
-		  <div class="main">
-
-			  <div class="featured">
-				<h4> <strong>AÑADIR PRODUCTO</strong> </h4>
-				</div>
-			  <div id="centro" class="cajaC">
-                              
+      <h4 class="center"> <strong>AÑADIR PRODUCTO</strong> </h4>                         
         <form method="post" action="controlador">
-            <div>
-                
                 <input type="hidden" name="accion" value="AnadirCarrito" />
-                <table border="0" width="330">
-                    
+                <table class="center">
                     <tr>
-                        <th rowspan="5" width="160"><img src="imagenes/<%= p.getImagen()%>" width="120" height="120"></th>
                         <td>Codigo</td>
-                        <td><input type="text" name="txtCodigo" value="<%= p.getCodigoProducto()%>" readonly /></td>
+                        <td><input type="text" name="txtCodigo" value="<%= p.getCodigoProducto()%>" readonly class="btn-flat disabled"/></td>
                     </tr>
                     <tr>
                         <td>Nombre</td>
-                        <td><input type="text" name="txtNombre" value="<%= p.getNombre()%>" readonly /></td>
+                        <td><input type="text" name="txtNombre" value="<%= p.getNombre()%>" readonly class="btn-flat disabled"/></td>
                     </tr>
                     <tr>
                         <td>Precio</td>
@@ -36,16 +26,10 @@
                         <td><input required="" type="text" name="txtCantidad" value="0" /></td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <th><img src="imagenes/<%= p.getImagen()%>" width="120" height="120"></th>
                         <td><input class="btn" type="submit" value="Añadir" name="btnAnadir" /></td>
                     </tr>
                 </table>
-            </div>
         </form>
-
     </div>
-	</div>
-</div>
-
-</body>
-</html>
+<jsp:directive.include file="footer.jsp" />
