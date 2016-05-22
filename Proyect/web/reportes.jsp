@@ -1,19 +1,19 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
   <!-- Inicio de JSP --> 
   <jsp:directive.include file="header.jsp" />
-  <div>
-      <h3>Reportes</h3>
-  <table>
-      <td>
-          <a href="#"><img src="UserPlataforma/User.png" style="height: 120px;width: 120px;"><br>
+  <div class="container">
+      <h3 class="center active">Reportes</h3>
+  <table class="center">
+      <td class="Product center">
+          <a href="#"><img src="UserPlataforma/User.png" class="Product center"><br>
               Reporte Usuarios</a>
       </td>
-      <td>
-          <a href="#"><img src="UserPlataforma/Ventas.png" style="height: 120px;width: 120px;"><br>
+      <td class="Product center">
+          <a href="#"><img src="UserPlataforma/Ventas.png" class="Product center"><br>
               Reporte Ventas</a>
       </td>
-      <td>
-          <a href="#"><img src="UserPlataforma/Productos.png" style="height: 120px;width: 120px;"><br>
+      <td class="Product center">
+          <a><img src="UserPlataforma/Productos.png" class="Product center"><br>
               Reporte Productos</a>
       </td>
 
