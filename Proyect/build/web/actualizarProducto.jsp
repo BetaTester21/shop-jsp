@@ -5,7 +5,7 @@
   <% Producto p= ProductoBD.obtenerProducto(Integer.parseInt(request.getParameter("id")));
   %>
  <div class="container">
-				<h4 class="center"> <strong>ACTUALIZAR PRODUCTO</strong> </h4>
+				<h4 class="center">ACTUALIZAR PRECIO </h4>
         <form method="post" action="controlador">
                 <input type="hidden" name="accion" value="ModificarProducto" />
                 <table>
@@ -15,15 +15,13 @@
                     </tr>
                     <tr>
                         <td>Nombre</td>
-                        <td><input type="text" name="txtNombre" value="<%= p.getNombre()%>" /></td>
+                        <td><input type="text" name="txtNombre" value="<%= p.getNombre()%>" class="btn-flat disabled" /></td>
                     </tr>
                     <tr>
                         <td>Precio</td>
                         <td><input type="text" name="txtPrecio" value="<%= p.getPrecio()%>" /></td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td><input class="btn" type="submit" value="Actualizar" name="btnActualizar" /></td>
+                    <tr><input class="btn center" type="submit" value="Actualizar" name="btnActualizar"/>
                     </tr>
                 </table>
         </form>
