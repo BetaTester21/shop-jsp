@@ -5,7 +5,7 @@
       <h3 class="center active">Reportes</h3>
   <table class="center">
       <td class="Product center">
-          <a href="#"><img src="UserPlataforma/User.png" class="Product center"><br>
+          <a href="ReporteUser.jsp"><img src="UserPlataforma/User.png" class="Product center"><br>
               Reporte Usuarios</a>
       </td>
       <td class="Product center">

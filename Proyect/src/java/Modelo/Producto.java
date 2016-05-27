@@ -4,6 +4,7 @@ public class Producto {
     private  int codigoProducto;
     private String nombre;
     private double precio;
+    private String categoria;
     private String imagen;
 
     public String getImagen() {
@@ -18,18 +19,20 @@ public class Producto {
         
     }
 
-    public Producto(int codigoProducto, String nombre, double precio, String imagen) {
+    public Producto(int codigoProducto, String nombre, double precio,String categoria, String imagen) {
         this.codigoProducto = codigoProducto;
         this.nombre = nombre;
         this.precio = precio;
+        this.categoria = categoria;
         this.imagen = imagen;
     }
     
     
-    public Producto(int codigoProducto, String nombre, double precio) {
+    public Producto(int codigoProducto, String nombre, double precio,String categoria) {
         this.codigoProducto = codigoProducto;
         this.nombre = nombre;
         this.precio = precio;
+        this.categoria = categoria;
     }
 
     public int getCodigoProducto() {
@@ -54,6 +57,13 @@ public class Producto {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+    public String getCategoria() {
+        return nombre;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     @Override

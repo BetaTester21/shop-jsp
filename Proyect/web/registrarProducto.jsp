@@ -8,14 +8,21 @@
                         <div class="input-field col s6 center">
                             <i class="material-icons prefix center">spellcheck</i>
                             <input id="icon_prefix" type="text" name="txtNombre" class="validate">
-                            <label for="icon_prefix">Nombre</label>
+                            <label for="icon_spellcheck">Nombre</label>
                         </div>
                     </div>
                     <div class="row center">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">credit_card</i>
-                            <input id="icon_telephone" type="text" name="txtPrecio" class="validate">
-                            <label for="icon_telephone">Precio</label>
+                            <input id="icon_credit_card" type="text" name="txtPrecio" class="validate">
+                            <label for="icon_credit_card">Precio</label>
+                        </div>
+                    </div>
+                <div class="row center">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">view_module</i>
+                            <input id="icon_view_module" type="text" name="txtPrecio" class="validate">
+                            <label for="icon_view_module">Categoria</label>
                         </div>
                     </div>
                     <div class="row center">

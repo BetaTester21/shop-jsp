@@ -26,6 +26,7 @@
                 <div class="nav-wrapper">
                     <a href="" class="brand-logo">Tienda Virtual</a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="Prueba.jsp"><i class="material-icons left">store</i>Prueba</a></li>
                     <li><a href="index.jsp"><i class="material-icons left">view_list</i>Catalogo<span class="new badge"></span></a></li>
                     <li><a href="registrarProducto.jsp"><i class="material-icons left">store</i>Producto</a></li>
                     <li><a href="registrarVenta.jsp"><i class="material-icons left">shopping_cart</i>Ventas</a></li>
@@ -40,5 +41,5 @@
                    <img class="plataforma">
                    <%=user%>
                 </div>
-     
+          
  

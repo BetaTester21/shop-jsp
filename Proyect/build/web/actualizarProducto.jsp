@@ -21,6 +21,10 @@
                         <td>Precio</td>
                         <td><input type="text" name="txtPrecio" value="<%= p.getPrecio()%>" /></td>
                     </tr>
+                    <tr>
+                        <td>Categorias</td>
+                        <td><input type="text" name="txtPrecio" value="<%= p.getPrecio()%>" /></td>
+                    </tr>
                     <tr><input class="btn center" type="submit" value="Actualizar" name="btnActualizar"/>
                     </tr>
                 </table>
