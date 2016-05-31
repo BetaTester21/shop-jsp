@@ -14,7 +14,7 @@ public class ProductoBD {
             cl=Conexion.getConexion().prepareCall("{CALL spF_producto_all()}");
             rs = cl.executeQuery();
             while (rs.next()) {
-                Producto p = new Producto(rs.getInt(1),rs.getString(2),rs.getDouble(3),rs.getString(4),rs.getString(5));
+                Producto p = new Producto(rs.getInt(1),rs.getString(2),rs.getDouble(3),rs.getString(4));
                 lista.add(p);
             }
         } catch (Exception e) {  }
@@ -25,12 +25,11 @@ public class ProductoBD {
         CallableStatement cl = null;
         boolean rpta = false;
         try {
-            cl=Conexion.getConexion().prepareCall("{CALL spI_producto(?,?,?,?,?)}");
+            cl=Conexion.getConexion().prepareCall("{CALL spI_producto(?,?,?,?)}");
             cl.registerOutParameter(1, Types.INTEGER);
             cl.setString(2, varproducto.getNombre());
             cl.setDouble(3, varproducto.getPrecio());
-            cl.setString(4, varproducto.getCategoria());
-            cl.setString(5, varproducto.getImagen());
+            cl.setString(4, varproducto.getImagen());
             int i=cl.executeUpdate();
             if(i==1){
                 rpta=true;
@@ -55,8 +54,7 @@ public class ProductoBD {
                 p.setCodigoProducto(rs.getInt(1));
                 p.setNombre(rs.getString(2));
                 p.setPrecio(rs.getDouble(3));
-                p.setCategoria(rs.getString(4));
-                p.setImagen(rs.getString(5));
+                p.setImagen(rs.getString(4));
             }
 
         }catch (Exception e) {}

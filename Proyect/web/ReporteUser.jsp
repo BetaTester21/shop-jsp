@@ -1,17 +1,21 @@
-<%-- 
-    Document   : ReporteUser
-    Created on : 26/05/2016, 10:34:12 AM
-    Author     : Betax
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<%@ page import="net.sf.jasperreports.engine.*" %> 
+<%@ page import="java.util.*" %> 
+<%@ page import="java.io.*" %> 
+<%@ page import="java.sql.*" %> 
+<%
+Connection conexion; 
+Class.forName("com.mysql.jdbc.Driver").newInstance(); 
+conexion = DriverManager.getConnection("jdbc:mysql://localhost/bdcarrito", "root", "");
+File reportFile = new File(application.getRealPath("Reporte/usuarios.jasper")); 
+Map parameters = new HashMap(); parameters.put("Nombre_parametro", "Valor_Parametro"); 
+byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath (), parameters, conexion); 
+response.setContentType("application/pdf");
+response.setContentLength(bytes.length); 
+ServletOutputStream ouputStream = response.getOutputStream(); 
+ouputStream.write(bytes, 0, bytes.length);
+ouputStream.flush(); 
+ouputStream.close();
+%>

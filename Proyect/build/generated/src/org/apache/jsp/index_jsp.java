@@ -85,6 +85,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"nav-wrapper\">\n");
       out.write("                    <a href=\"\" class=\"brand-logo\">Tienda Virtual</a>\n");
       out.write("                    <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n");
+      out.write("                    <li><a href=\"Prueba.jsp\"><i class=\"material-icons left\">store</i>Prueba</a></li>\n");
       out.write("                    <li><a href=\"index.jsp\"><i class=\"material-icons left\">view_list</i>Catalogo<span class=\"new badge\"></span></a></li>\n");
       out.write("                    <li><a href=\"registrarProducto.jsp\"><i class=\"material-icons left\">store</i>Producto</a></li>\n");
       out.write("                    <li><a href=\"registrarVenta.jsp\"><i class=\"material-icons left\">shopping_cart</i>Ventas</a></li>\n");
@@ -101,7 +102,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(user);
       out.write("\n");
       out.write("                </div>\n");
-      out.write("     \n");
+      out.write("          \n");
       out.write(" ");
       out.write("\r\n");
       out.write("    <h3 class=\"center\">Lista de Productos</h3>\r\n");
