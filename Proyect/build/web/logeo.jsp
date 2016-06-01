@@ -32,44 +32,12 @@
                 <label for="first_name">Password</label>
               </div>
             </div>
-        <div>
+        <div class="center">
             <button class="btn waves-effect waves-light center">Ingresar<i class="material-icons right">send</i></button>
+            <a href="registrar.jsp" class="btn waves-notransition">Registrar</a>
         </div>
     </form>     
-  </div>
-    <div class="row">
-        <h3 class="center">Registar</h3>
-    <form class="col s12" method="post" action="controlador">
-        <input type="hidden" name="accion" value="RegistrarCliente" />
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_account_circle" required="" type="text" autocomplete="off" class="validate" name="txtNombre">
-          <label for="icon_account_circle">Nombre</label>
-        </div>
-          <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_account_circle" required="" type="text" autocomplete="off" class="validate" name="txtApellido">
-          <label for="icon_account_circle">Apellido</label>
-        </div>
-      </div>
-        <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">perm_identity</i>
-              <input id="icon_perm_identity" required="" type="text" autocomplete="off" class="validate" name="txtUsuario">
-              <label for="icon_perm_identity">Usuario</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">vpn_key</i>
-                <input id="icon_vpn_key" class="validate" required="" autocomplete="off" type="password" name="txtPassword">
-                <label for="ico_vpn_key">Password</label>
-            </div>
-            <div>
-                <button class="btn waves-effect waves-light center" type="submit" value="Registrar" name="btnRegistrar">Registrar<i class="material-icons right">send</i></button>
-            </div>
-        </div>
-       </form>
-      </div>
+    </div>
     </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>

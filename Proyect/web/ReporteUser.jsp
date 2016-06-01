@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : registrar
+    Created on : 01/06/2016, 07:49:03 AM
+    Author     : Betax
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="net.sf.jasperreports.engine.*" %> 
